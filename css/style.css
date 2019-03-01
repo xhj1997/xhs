@@ -1,0 +1,90 @@
+body {
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0px auto;
+    padding: 0;
+    font-size: .8em;
+}
+
+#zoom {
+    position: absolute;
+    width: 100px;
+    height: 100px;		
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+#content {
+    text-align: center;
+}
+#view {
+	width: 500px;
+    height: 500px;
+}
+
+#view img {
+    border-radius: 8px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+#thumbs { 
+	position: relative;
+	margin: 20px 0;
+}
+
+#nav-left-thumbs {
+    position: relative;
+    left:5px;
+    top:250px;
+    float: left;
+}
+	
+#nav-right-thumbs {
+    float: right;
+    top:250px;
+    margin: 2px 0 0 15px;
+}
+
+#nav-left-thumbs, #nav-right-thumbs {
+    position: relative;
+    /*top:-250px;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    font-size: 1em;
+    font-weight: bold;
+    color: #999;
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+#nav-left-thumbs:hover, #nav-right-thumbs:hover {
+    background: lightgrey;
+}
+#pics-thumbs { 
+	position: relative;
+	left: 0;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden; 
+    transition-duration: .8s;
+}
+
+#pics-thumbs img {
+    padding: 5px;
+	margin: 0 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+    transition-duration: .5s;
+}
+

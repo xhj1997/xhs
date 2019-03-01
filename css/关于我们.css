@@ -1,0 +1,179 @@
+.redfont{
+    color: red !important;
+    border-bottom: 3px solid red;
+}
+.bigbanner{
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    height: 380px;
+    margin-top: 20px;
+}
+.bigbanner ul{
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+}
+.bigbanner ul li {
+    width: 240px;
+    float: left;
+    height: 380px;
+}
+.bigbanner li img{
+    width: 100%;
+    height: 380px;
+}
+.bannernext{
+    width: 940px;
+    text-align: center;
+    margin: 60px auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.bannernext h2{
+    font-size: 36px;
+    color: #000;
+    font-weight: 600;
+    margin:0 0 30px 0;
+}
+.bannernext .content{
+    color: #555;
+    font-size: 16px;
+}
+.bannernext .content p{
+    line-height: 16px;
+    margin: 16px 0;
+}
+.c1{
+    width: 940px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.list{
+    margin: 40px 0 0 0;
+
+}
+.list .each_item{
+    float: left;
+    width: 313px;
+    height: 147px;
+}
+.list .each_item img{
+    width: 80px;
+    height: 80px;
+}
+.title{
+    font-size: 20px;
+    color: #333;
+    display: block;
+    margin: 10px 0 0 0;
+}
+.content{
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin: 5px 0 0 0;
+}
+.h2 {
+    font-size: 36px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+.d1{
+    background: #fbfbfb;
+}
+.d1 .con{
+    width: 940px;
+    text-align: left;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.history{
+    width: 940px;
+    margin: 0 auto;
+}
+.history .list{
+    width: 428px;
+    float: left;
+}
+.history .list .each_item{
+    margin: 10px 0 0 0;
+    color: #999;
+}
+.year{
+    font-size: 26px;
+    font-weight: 500;
+    width: 58px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -16px;
+}
+.progress{
+    display: inline-block;
+    margin: 0 0 0 30px;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    background: #d5d5d5;
+    border-radius: 50%;
+    display: block;
+}
+.line{
+    width: 1px;
+    height: 40px;
+    display: block;
+    background: #ccc;
+    margin: 12px auto 0 auto;
+}
+.history .list .content{
+    font-size: 14px;
+    font-weight: 500;
+    width: 254px;
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
+    margin-top: -100px;
+}
+.ago{
+    width: 450px;
+    height: 450px;
+    float: left;
+}
+.ago img{
+    width: 100%;
+}
+.company{
+    margin: 80px auto 30px auto;
+    text-align: center;
+    padding: 0 30px 30px 30px;
+}
+.picture{
+    margin-top: 50px;
+}
+.picture .pic1{
+    width: 61.57%;
+    float: left;
+}
+.picture .pic2{
+    width: 36.8%;
+    float: right;
+}
+.picture .pic5{
+    float: right;
+    width: 36.8%;
+    margin-top: 1.63%;
+}
+.picture .pic3{
+    float: left;
+    margin-top: 1.63%;
+    width: 29.86%;
+}
+.picture .pic4{
+    margin-top: 1.63%;
+    width: 29.86%;
+}

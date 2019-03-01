@@ -1,0 +1,108 @@
+.banner{
+    position: relative;
+    top: 52px;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+}
+.banner img{
+    width: 100%;
+    height:380px;
+}
+.next{
+    width: 100%;
+}
+.email_item{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0 50px 0;
+    z-index: 1;
+}
+.third{
+    background: #FBFBFB;
+    width:100%;
+    height:505px;
+    overflow: hidden;
+    position: relative;
+}
+.third .left{
+    padding: 50px 0 70px 0;
+    width: 1000px;
+    margin: 0 auto;
+}
+.eng{
+    font-size: 14px;
+    color: #ff2741;
+    font-weight: 500;
+    margin: 0 auto;
+}
+.title{
+    color: #000;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 10px 0 12px 0;
+}
+.red-line{
+    width: 30px;
+    height: 1px;
+    display: block;
+    background: #ff2741;
+    margin: 0 0 50px 0;
+}
+.third .left .list{
+    margin: 0 0 30px 0;
+}
+.third .left .list .name{
+    margin: 0 0 10px 0;
+    color: #000;
+    font-size: 16px;
+}
+.third .left .list .address{
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+.third .right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.third .right img{
+    width: 780px;
+}
+.final{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0 50px 0;
+}
+.item{
+    background: #fbfbfb;
+    width: 180px;
+    height: 149px;
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+    float: left;
+    padding: 31px 0 0 0;
+}
+.test{
+    padding-top: 22px;
+}
+.icon-item .item.ios .big-ewm[data-v-9bab7e1a] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item img{
+    width: 90px;
+}
+.icon{
+    width: 44px;
+    padding: 15px 0 0 0;
+}
+.big-ewm img{
+    width: 180px;
+    height: 180px;
+}

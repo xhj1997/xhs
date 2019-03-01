@@ -1,0 +1,633 @@
+.card-note{
+    width:850px;
+    margin:50px auto 0 auto;
+    overflow: hidden;
+}
+.card-note .left-card{
+    float: left;
+    margin-top: 20px;
+    width: 500px;
+}
+.card-note .left-card .bottom-gap{
+    margin:0 0 20px 0;
+}
+.card-note .left-card .bottom-gap .carousel{
+    position: relative;
+    background: #fbfbfb;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.carousel ul{
+    margin: 0;
+}
+.carousel .slide li{
+    position: absolute;
+    list-style:none;
+}
+.carousel .slide li .inner{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.carousel .change-pic{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.carousel .change-pic .left{
+    left: 10px;
+    background: url("../images/left1.png") no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+}
+.carousel .change-pic .right{
+    right: 10px;
+    background: url("../images/right1.png") no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+}
+.small-pic{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.small-pic .each{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin:0 5px 0 0;
+    border-radius: 4px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+/*.small-pic .each .img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}*/
+.small-pic .active{
+    box-shadow: 0px 3px 8px 0 rgba(255,82,103,0.5);
+    border: 1px solid #ff2741;
+    opacity: 1;
+}
+.note-top{
+    width: 500px;
+}
+.note-top .related-tags{
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+.note-top .related-tags .each-tag{
+    float: left;
+    list-style: none;
+    padding: 4px 14px 2px 14px;
+    color: #555;
+    font-size: 12px;
+    border: 1px solid #999;
+    border-radius: 12.5px;
+    text-align: center;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    height: 17px;
+    line-height: 17px;
+}
+.as-p{
+    font-weight: normal;
+    font-size:14px;
+    color:#333;
+}
+.content p{
+    font-size: 14px;
+    margin:14px 0;
+}
+.content .mention{
+    color: #5b92e1;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.content .hash-tag{
+    color: #5b92e1;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tags{
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    color: #555;
+}
+.tags .left-tag{
+    float: left;
+    display: block;
+    color: #999;
+    margin: 3px 0 0 0;
+}
+.tags .right-tag{
+    float: right;
+    display: inline-block;
+   margin-bottom: 26px;
+}
+.tags .right-tag .like{
+    color: #555;
+}
+.tags .right-tag .like i{
+    background: url("../images/heart.png") no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tags .right-tag .like span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 3px;
+}
+.tags .right-tag .comment{
+    color: #555;
+    margin-left: 25px;
+}
+.tags .right-tag .comment i{
+    background: url("../images/xx.png") no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tags .right-tag .comment span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 3px;
+}
+
+.tags .right-tag .star{
+    color: #555;
+    margin-left: 25px;
+}
+.tags .right-tag .star i{
+    background: url("../images/star.png") no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tags .right-tag .star span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 3px;
+}
+.bottom-info{
+    width: 500px;
+    height: 50px;
+    background: rgba(176,196,222,0.5);
+    border:1px solid #eee;
+    border-radius: 25px;
+    font-size: 12px;
+    position: relative;
+    margin: 50px 0 16px 0;
+}
+.author-info{
+    margin: 9px 11px 0;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333;
+    display: block;
+}
+.author-info .left{
+    position: relative;
+    float: left;
+}
+.author-info .left .left-img img{
+    border-radius: 50%;
+}
+.author-info .left .left-img .border-img{
+    border: 1px solid rgba(0,0,0,0.15);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.author-info .right{
+    float: left;
+    margin: 2px 0 0 15px;
+}
+.author-info .right .name-bottom{
+    margin: 3px 0 0 0;
+    font-weight: 500;
+    vertical-align: middle;
+    height:20px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.bottom-info .share-item{
+    line-height: 50px;
+    margin-top: -48px;
+    float: right;
+    width: 327px;
+    height: 48px;
+}
+.bottom-info .share-item .apart-border{
+    width: 3px;
+    height: 19px;
+    display: block;
+    background: #d8d8d8;
+    float: left;
+    border-radius: 1.5px;
+    margin: 15px 5px 0 0;
+}
+.bottom-info .share-item .title{
+    height:20px;
+    line-height: 50px;
+    float: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.bottom-info .share-item .all-icon{
+    float: left;
+    padding: 8px 0 0 0;
+    margin-left: 7px;
+}
+.bottom-info .share-item .all-icon .wx{
+    background: url("../images/ea4ae3b1-af74-4ce3-96a6-b44fd22a70c1.png") no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.bottom-info .share-item .all-icon .wb{
+    background: url("../images/23e4d8f4-1379-4098-9130-747aae02cc6a.png") no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.bottom-info .share-item .all-icon .qq{
+    background: url("../images/7c0d2f33-35ec-4b05-a6d4-637728e1f17e.png") no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.bottom-fixed{
+    position: fixed;
+    display: block;
+    border: none;
+    bottom: 30px;
+    background: rgba(176,196,222,0.5);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
+}
+.alltip{
+    width: 500px;
+    font-size:14px;
+    color:#000;
+    overflow: hidden;
+}
+.alltip .top{
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+.alltip .top .remain{
+    width: 5px;
+    height: 16px;
+    display: inline-block;
+    background: #ff2741;
+    vertical-align: middle;
+    margin: 0 7px 0 0;
+}
+.alltip .top .brief{
+    vertical-align: middle;
+}
+.alltip .comment{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.alltip .comment .comment-info{
+    overflow: hidden;
+}
+.alltip .comment .comment-info .user{
+    float: left;
+}
+.alltip .comment .comment-info .user .user-info{
+    float: left;
+    margin: 2px 0 0 20px;
+}
+.alltip .comment .comment-info .user .avatar{
+    width: 42px;
+    height:42px;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #e6e6e6;
+    float: left;
+    background-size: contain;
+    cursor: pointer;
+}
+.alltip .comment .comment-info .user-name{
+    color: #000;
+    font-size:16px;
+    margin: 0;
+}
+.alltip .comment .comment-info .ptime{
+    font-size: 12px;
+    color:#999;
+    margin: 3px 0 0 0;
+    display: block;
+}
+.alltip .comment .comment-info .like{
+    float: right;
+    margin: 7px 0 0 0;
+    color: #999;
+}
+.alltip .comment .content{
+    margin: 9px 0 0 62px;
+    line-height: 22.5px;
+    color:#555;
+}
+.alltip .replies{
+    padding: 10px;
+    margin: 8px 0 0 62px;
+    background-color: #f8f8fa;
+    line-height:24px;
+}
+.alltip .replies .replier{
+    color:#000;
+}
+.alltip .replies .author{
+    vertical-align: initial;
+}
+.alltip .replies .replycontent{
+    color: #555;
+}
+.alltip .bottom{
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #5b92e1;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.card-note .right-card{
+    float: right;
+    width: 322px;
+    margin-top: 20px;
+}
+.card-note .right-card .author-item{
+    width: 320px;
+    height: 176px;
+    border:1px solid #eee;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+}
+.card-note .right-card .author-item .title{
+    font-weight:500;
+    font-size: 16px;
+    padding: 10px 0 10px 20px;
+    margin:0;
+    border-bottom: 1px solid #eee;
+}
+.card-note .right-card .author-item .author-info{
+    margin: 10px 20px 0 20px;
+    padding: 0 0 10px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+.card-note .right-card .author-item .author-info .left{
+    position: relative;
+    float: left;
+}
+.card-note .right-card .author-item .author-info .left .left-img img{
+    border-radius: 50%;
+}
+.author-info .right{
+    float: left;
+    margin: 2px 0 0 15px;
+}
+.author-info .right .name{
+    margin:3px 0 0 0;
+    font-weight: 500;
+    vertical-align: middle;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.author-info .right .name .name-detail{
+    vertical-align: middle;
+    display: inline-block;
+}
+.author-info .right .name .level-detail{
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.author-info .right .brief{
+    color:#999;
+    margin: 4px 0 0 0;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.author-info .left .left-img .border-img{
+    border:1px solid rgba(0,0,0,0.15);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.card-note .right-card .author-item .card-info{
+    overflow: hidden;
+    margin: 8px 20px;
+}
+.author-item .card-info .inner{
+    float:left;
+    color: #999;
+    width: 86px;
+    font-size: 14px;
+    margin: 0 3px;
+}
+.author-item .card-info .inner span{
+    display: block;
+    line-height: 20px;
+}
+.author-item .card-info .inner .note{
+    color: #4f4f4f;
+    font-weight: 500;
+}
+.author-item .card-info .inner .fans{
+    color: #4f4f4f;
+    font-weight: 500;
+}
+.author-item .card-info .inner .collect{
+    color: #4f4f4f;
+    font-weight: 500;
+}
+.card-note .bottom-gap{
+    margin:0 0 20px 0;
+}
+.panel-card{
+    /*position: fixed;*/
+    width: 320px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #fff;
+    padding-bottom: 9px;
+}
+.panel-card h3{
+    font-size:16px;
+    padding:10px 20px;
+    margin:0;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+}
+.panel-card .inner{
+    width: 280px;
+    height: 80px;
+    margin:10px 20px;
+    display: block;
+    color:#555;
+}
+.panel-card .inner .picture{
+    position: relative;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    float: left;
+    background: #f8f8fa;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+.panel-card .inner .picture .photo{
+    display: block;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    cursor: pointer;
+}
+.panel-card .inner .content{
+    float: left;
+    width: 190px;
+    margin: 3px 0 0 0;
+}
+.desc{
+    font-size:14px;
+    height: 38px;
+    overflow: hidden;
+    margin: 0 !important;
+}
+.info{
+    margin:17px 0 0 0;
+    color: #999;
+}
+.info .counts{
+    color: #555;
+}
+.more{
+    border-top:1px solid #eee;
+    text-align: center;
+    margin:0 20px;
+    padding: 9px 0 0 0;
+    cursor: pointer;
+    color: #555;
+}
+
+
+
+.card-note .load{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    margin-left:-25px;
+    margin-top:-25px;
+}
+
+
+
+.backtop{
+    background: url(../images/download.png) no-repeat;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+.scrolltop{
+    background: url(../images/backtop2.1959f1a.png) no-repeat;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+.ewm .smallewm{
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/ewm.png) no-repeat;
+    background-size: contain;
+}
+.ewm .bigewm{
+    background: #fff;
+    right: 50px;
+    bottom: 10px;
+    width: 100px;
+    height: 120px;
+    position: fixed;
+    box-shadow: 0 2px 4px #eee;
+    border-radius: 5px;
+}
+.ewm .bigewm .ewmimg{
+    width: 86px;
+    height: 86px;
+    margin: 7px 7px 1px 7px;
+}
+.ewm .bigewm .title{
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+    text-align: center;
+}

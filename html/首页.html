@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>小红书_标记我的生活</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="icon" sizes="any" mask="" href="//ci.xiaohongshu.com/953e8240-67d1-4d6d-94f3-fa699ad27b9a">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handleldFriendly" content="true">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/shouye.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <script src="../js/shouye.js"></script>
+    <style>
+
+        .process {
+             height: 2px;
+             width: 0px;
+             display: block;
+             background: white;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1,1);
+            }
+            100% {
+                transform: scale(2.2,2.2);
+            }
+        }
+        .zoomIn {
+            animation-name: zoomIn;
+        }
+        .animated {
+            transform-origin:left;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .aniD1 {
+            animation-duration: 1s;
+        }
+
+        .aniDe1 {
+            animation-delay: 1s;
+        }
+    </style>
+
+</head>
+<body onLoad="newsSee()">
+<!--头部-->
+<div class="header" id="header">
+    <div class="header_logo">
+        <img src="../images/87681a4d-9b81-4c14-aecc-ead27a4d7952.png" alt="">
+    </div>
+    <div class="header_middle">
+        <a href="首页.html" title="小红书_首页" class="redfont" >首页</a>
+        <a href="社区精选.html" title="小红书_社区精选">社区精选</a>
+        <a href="关于我们.html" title="小红书_关于我们">关于我们</a>
+        <a href="联系我们.html" title="小红书_加入我们">加入我们</a>
+        <a href="招商合作.html" title="小红书_招商合作">招商合作</a>
+        <a href="品牌账号.html" title="小红书_品牌账号">品牌账号</a>
+    </div>
+</div>
+<div class="main">
+
+        <div class="mainOne">
+            <div class="head"></div>
+            <h1>小红书</h1>
+            <!--<span id="quan" class="quan"></span>-->
+            <form name="form1">
+                <input type="text" name="news2" size=40 class="quan">
+            </form>
+            <script>
+                function MArray() {
+                    this.length = MArray.arguments.length;
+                    for (var i = 0; i < this.length; i++)
+                        this[i+1] = MArray.arguments[i]}
+                var fArray = new MArray;
+                fArray[0]="全世界的好东西";
+                fArray[1]="标记我的生活";
+                fArray[2]="明星生活的另一面";
+                fArray[3]="吃穿玩乐买的日常";
+                var x = 1;
+                var y = 0;
+                var msg1 = fArray[y];
+                function newsSee() {
+                    if (x==msg1.length+1) {
+                        y+=1;
+                        if (y > 3) y=0;
+                        document.form1.news2.value=' ';
+                        msg1 = fArray[y];
+                        x=0;}
+                    document.form1.news2.value=msg1.substring(0,x);
+                    x+=1;
+                    setTimeout("newsSee() ",200);
+                }
+
+            </script>
+            <img src="../images/e7088961-073f-4699-8b9a-c4bf8c2abd19@r_640w_640h_ss1.jpg" class="mainImg1" >
+            <div class="ios" id="ios">
+            <span class="iosspan">IOS版</span>
+            <i class="iosi" ></i>
+            </div>
+            <div class="erweima1" id="erweima1"></div>
+            <div class="android" id="android">
+            <span class="androidspan">Android版</span>
+            <i class="androidi"></i>
+            </div>
+            <div class="erweima2" id="erweima2"></div>
+            <div class="mianTupian" id="mianTupian"></div>
+        </div>
+        <div class="mainTwo">
+            <div class="allzi">
+                <div class="mone" id="mone">
+                    <span style="width: 110px;display: block;height: 20px" class="title">关注 Follow</span><br>
+                <span class="time">
+                    <i class="process"></i>
+                </span><br>
+                    <span class="descrption">日常点滴，不容错过</span>
+                </div>
+                <div class="mtwo">
+                    <span style="width: 130px;display: block;height: 20px" class="title">发现 Explore</span><br>
+                <span class="time">
+                    <i class="process"></i>
+                </span><br>
+                    <span class="descrption">发现世界分享生活</span>
+                </div>
+                <div class="mthree">
+                    <span style="width: 130px;display: block;height: 20px" class="title animated">附近 Nearby</span><br>
+                <span class="time">
+                    <i class="process"></i>
+                </span><br>
+                    <span class="descrption">跟多笔记，近在咫尺</span>
+                </div>
+                <div class="mfour">
+                    <span style="width: 110px;display: block;height: 20px" class="title animated">商城 Store</span><br>
+                <span class="time">
+                    <i class="process"></i>
+                </span><br>
+                    <span class="descrption">爆款小众 近在咫尺</span>
+                </div>
+            </div>
+            <script>
+                /*$(function(){
+                   $("#mone").firstChild.css({""})
+                })*/
+            </script>
+                <div class="iponeimg">
+                    <img src="../images/ipone1.png" alt="" id="iponepic">
+                </div>
+        </div>
+        <div class="mainThree">
+            <div class="top-block">
+                <span class="icon"></span>
+                <span class="title">9000万用户的口碑分享</span>
+                <a href="社区精选.html" class="more">更多</a>
+            </div>
+            <div class="bottom-block" id="bottom-block">
+                <div class="each-block_01" id="each-block_01">
+                    <img src="../images/aa1.jpg"  >
+                       <h3 class="each-jianjie">Nikelab WMNS FREE INNEVA编织鞋✌️️</h3>
+                        <span class="each-touxiang"></span>
+                        <p class="each-span">凌听雨</p>
+                        <i class="aixin"></i>
+                        <h6 class="each-shuliang">1266</h6>
+                </div>
+                <div class="each-block_02" id="each-block_02">
+                    <img src="../images/aa2.jpg" >
+                    <h3 class="each-jianjie">卸妆彻底才是好皮肤万年守则😋 使用顺序如下：Kissme卸妆</h3>
+                    <span class="each-touxiang"></span>
+                    <p class="each-span">蔡文静</p>
+                    <i class="aixin"></i>
+                    <h6 class="each-shuliang">268</h6>
+                </div>
+                <div class="each-block_03" id="each-block_03">
+                    <img src="../images/aa3.jpg" >
+                    <h3 class="each-jianjie">你们的老公都在我的手机里！</h3>
+                    <span class="each-touxiang"></span>
+                    <p class="each-span">何泓珊</p>
+                    <i class="aixin"></i>
+                    <h6 class="each-shuliang">967</h6>
+                </div>
+                <div class="each-block_04" id="each-block_04">
+                    <img src="../images/aa4.jpg" >
+                    <h3 class="each-jianjie">护肤过程！！</h3>
+                    <span class="each-touxiang"></span>
+                    <p class="each-span">林允Jelly</p>
+                    <i class="aixin"></i>
+                    <h6 class="each-shuliang">552</h6>
+                </div>
+            </div>
+        </div>
+        <div class="mainFour">
+            <div class="mainFour-zi">
+                <h1>全世界的</h1>
+                <h1>小红薯</h1>
+                <p>与你一起，分享美好生活</p>
+            </div>
+            <div class="vidio-map">
+                <video src="../images/map.mp4" autoplay="autoplay" preload="auto" loop="loop" class="video"></video>
+            </div>
+        </div>
+        <div class="mainFive">
+            <div class="ouxiang-vidio">
+                <div class="smallpic">
+
+                </div>
+                <a href="http://www.iqiyi.com/a_19rrh1ji0t.html?vfm=2008_aldbd" target="_blank"></a>
+            </div>
+            <div class="ouxiang-tupian">
+                <!--<div class="tupian-twoman"></div>-->
+            </div>
+        </div>
+
+    </div>
+<!--鼠标移上，二维码出现-->
+<div class="erweimaBudong" id="erleft"></div>
+<div class="bigerleft" id="bigerleft">
+    <div class="erweima-zi"><p>扫我下载小红书</p></div>
+</div>
+<!--返回顶部-->
+<a class="renturnTop" id="renturnTop">
+    <img src="../images/download.png" alt="" id="renturnTop_img">
+</a>
+
+<!--底部-->
+<div class="footer" style="padding-top: 52px">
+    <div class="footer_top">
+        <div class="footer_inner">
+            <div class="left fl">
+                <img class="footer_logo" src="../images/881ae53d-2f84-4257-86c3-10e9805ad19f.png" title="" alt="">
+                <div class="icon-btn">
+                    <a href="">
+                        <span></span>
+                    </a>
+                    <a href="">
+                        <span></span>
+                    </a>
+                    <a href="">
+                        <span></span>
+                        ios
+                    </a>
+                    <a href="">
+                        <span></span>
+                        安卓
+                    </a>
+                </div>
+            </div>
+            <div class="right fr">
+                <div class="beed fl">
+                    <span></span>
+                    <div class="tab">
+                        <span>公司相关</span>
+                        <a href="" title="小红书_加入我们">加入我们</a>
+                        <a href="" title="小红书_招商合作">招商合作</a>
+                        <a href="" title="小红书_关于我们">关于我们</a>
+                    </div>
+                </div>
+                <div class="beed fl">
+                    <span></span>
+                    <div class="tab">
+                        <span>内容相关</span>
+                        <a href="" title="小红书_社区精选">社区精选</a>
+                        <a href="" title="小红书_媒体报道">媒体报道</a>
+                    </div>
+                </div>
+                <div class="beed fl">
+                    <span></span>
+                    <div class="tab">
+                        <span>协议条款</span>
+                        <a href="" title="小红书_注册协议">注册协议</a>
+                        <a href="" title="小红书_隐私协议">隐私协议</a>
+                        <a href="" title="小红书_侵权投诉指引">侵权投诉指引</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner-bottom">
+        <div class="inner">
+            <div class="info">
+                <a target="_blank" href="" title="小红书_沪ICP备">沪ICP备 13030189号 Copyright © 2014-<span>2018</span>行吟信息科技（上海）有限公司</a>
+                <span>| 地址：上海市黄浦区马当路388号C座</span>
+                <span>| 电话：021-64224530</span>
+                | <a  target="_blank" href=""> 自营经营者营业执照</a>
+                <a target="_blank" href="" title="小红书_沪公网安备"><span>2018</span>  沪公网安备 31010102002533号<i class="police"></i></a>
+            </div>
+            <div class="info">
+                <span title="小红书_网文">沪网文〔2018〕4086-308号</span>
+                | <a  target="_blank" href="" title="小红书_网络文化经营许可"> 网络文化经营许可证：沪网文[2018]4086-308号</a>
+                | <a  target="_blank" href="" title="小红书_网文">增值电信业务经营许可证：沪B2-20150021</a>
+                | <a  target="_blank" href="" title="小红书_食品经营">食品经营许可证：JY13101140093802</a>
+                | <a  target="_blank" href="" title="小红书_出版物经营">出版物经营许可证：新出发沪零字第M7553号</a></div> <div data-v-3b6d624c="" class="info"><a target="_blank" href="//o3.xiaohongshu.com/d/5-xingyin-sh-yiliaoqixie.pdf" title="小红书_医疗器械经营">医疗器械经营许可证：沪嘉食药监械经营许20187006号</a>
+            | <a  target="_blank" href="" title="小红书_互联网药品信息服务">互联网药品信息服务资格证书：(沪)-经营性-2018-0011 </a>
+            | <span title="小红书_违法不良信息">违法不良信息举报电话：(027) 5931 3970</span>
+            | <span>上海市互联网举报中心</span><i class="email"></i>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--手机内部图片自动轮播-->
+<script>
+    var pic = my$("iponepic");
+    var index = 0;
+    var timeid = setInterval(function(){
+        if (index==0){
+            var src = "../images/ipone3.png";
+            pic.src = src;
+            index = 1;
+        }else{
+            var src = "../images/ipone1.png";
+            pic.src = src;
+            index = 0;
+        }
+    },3000);
+</script>
+<!--更多下面一排图片自动轮播-->
+<script>
+    function flash(){
+        $(function(){
+            $("#each-block_01").fadeOut(2000,function(){
+                $(this).next().fadeOut(2000,arguments.callee).show(2000,function(){
+                    $(this).next().show(2000,function(){
+                        $("#each-block_01").fadeIn(2000);
+                    });
+                })
+            })
+        })
+    }
+    timer=setInterval(flash,10000);
+</script>
+
+<script>
+</script>
+</html>

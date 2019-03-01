@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第三方商家入驻系统</title>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <link rel="stylesheet" href="../css/第三方商家入驻平台.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+        <div class="box">
+            <div class="login">
+                <div class="left">
+                    <img src="../images/left.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="h">
+                        入驻小红书
+                    </div>
+                    <hr>
+                    <p>推荐用 163、126 或者 qq 邮箱注册，以防邮件被拦截</p>
+                    <div class="login-input">
+                        <input class="email" type="text" id="txt" placeholder="邮箱，此账号为后续商家后台账号，请慎重填写，注册后不可修改">
+                        <button class="btn" id="btn">注册</button>
+                        <a href="登录.html" class="return">返回登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onload = function()
+    {
+        var oTxt = document.getElementById("txt");
+        var oBtn = document.getElementById("btn");
+        oBtn.onclick = function()
+        {
+            var re = /^\w+@[a-z0-9]+\.[a-z]{2,4}$/;
+            if(re.test(oTxt.value))
+            {
+                alert("欢迎注册");
+            }
+            else
+            {
+                alert("请重新输入");
+            }
+        }
+    }
+</script>
+<script>
+
+</script>
+</html>

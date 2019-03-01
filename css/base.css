@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,a{
+    color: #333;
+    font-size: 12px;
+    /*background-color: #F6F6F6;*/
+    font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w{
+    width:1000px;
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: bottom;
+}
+.redtitle{
+    color: red;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?axvffw');
+    src:  url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?axvffw') format('truetype'),
+    url('../fonts/icomoon.woff?axvffw') format('woff'),
+    url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.space{
+    height: 12px;
+    width: 1px;
+    margin: 0 10px;
+    background-color: #9DAECA;
+    margin-top: 10px;
+}
+.spaceMenu{
+    height:12px;
+    width: 1px;
+    margin: 0 -10px;
+    background-color: #CCCCCC;
+    margin-top: 16px;
+}

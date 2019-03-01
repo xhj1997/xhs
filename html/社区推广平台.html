@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>社区推广平台</title>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.8.2.js"></script>
+    <link rel="stylesheet" href="../css/社区推广平台.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+   <div class="loginpage">
+    <div class="logincontain">
+        <div class="left">
+            <div class="line"></div>
+            <div class="name1">ARES</div>
+            <div class="name2">社区推广平台</div>
+            <div class="leftfooter">
+                <span>-</span>
+                <img src="../images/xhs.ad6cf59.png" alt="">
+                <span>-</span>
+            </div>
+        </div>
+        <div class="right">
+                <div class="title">登录小红书APP账号</div>
+                <div class="line"></div>
+                <div class="logininfo">
+                    <div class="lphone">
+                        <input type="text" placeholder="输入手机号" id="inputphone" >
+                             <span id="span1"></span>
+                    </div>
+                    <div class="lpassword">
+                        <input placeholder="输入验证码" id="inputpassword"/>
+                        <input type="button" id="code" onclick="createCode()" >
+                    </div>
+                   <button type="button" class="lbtn" onclick = "validate()">登录</button>
+                    <div class="wz">
+                        目前仅支持手机验证码登录，其他登录方式点击获取
+                        <a href="../images/6366a3fb-9a78-4830-82ee-9681a5eddd56.png" target="_blank">登录手册</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+       <div class="copyright">
+           Copyright © 2014-2018 行吟信息科技（上海）有限公司
+       </div>
+   </div>
+</body>
+
+<!--表单验证-->
+<script>
+    var input1=my$("inputphone");
+        input1.onblur=function () {
+            checkCorrect(input1)
+        }
+    function checkCorrect(ele) {
+        var reg=null;
+        var tip=null;
+        if(ele.getAttribute("id")=="inputphone"){
+            reg=/^1[34578]\d{9}$/
+            tip="*请输入正确的手机号码"
+        }
+        doCheck(ele,reg,tip)
+    }
+    //正则校验
+    function doCheck(element,reg,tip) {
+        var span=my$("span1");
+        if(reg.test(element.value)){
+            setInnerText(span,"")
+        }
+        else {
+            span.style.color="red"
+            setInnerText(span,tip)
+        }
+    }
+
+
+
+
+    //设置一个全局的变量，便于保存验证码
+    var code;
+    function createCode(){
+        //首先默认code为空字符串
+        code = '';
+        //设置长度，这里看需求，我这里设置了4
+        var codeLength = 4;
+        var codeV = document.getElementById('code');
+        //设置随机字符
+        var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z');
+        //循环codeLength 我设置的4就是循环4次
+        for(var i = 0; i < codeLength; i++){
+            //设置随机数范围,这设置为0 ~ 36
+            var index = Math.floor(Math.random()*36);
+            //字符串拼接 将每次随机的字符 进行拼接
+            code += random[index];
+        }
+        //将拼接好的字符串赋值给展示的Value
+        codeV.value = code;
+    }
+
+    //下面就是判断是否== 的代码，无需解释
+    function validate(){
+        var oValue =my$('inputpassword').value.toUpperCase();
+        var tip=doCheck().tip;
+        if(oValue ==0){
+            alert('请输入验证码');
+        }else if(oValue = code && tip == "" ){
+            window.open('http://www.baidu.com','_self');
+        }else{
+            alert('验证码不正确，请重新输入');
+            oValue = ' ';
+            createCode();
+        }
+    }
+
+    //设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
+    window.onload = function (){
+
+        createCode();
+    }
+</script>
+</html>
